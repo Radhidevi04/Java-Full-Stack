@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment 2</title>
+    <title>Loginpage</title>
+    <style>
+        .LoginDiv{
+            border: 2px solid green;
+            width:280px;
+            position: absolute;
+            top: 150px;
+            left:300px;
+            border-radius:20px;
+        }
+        .LoginButton{
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            border: none;
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+        }
+
+    </style>
 </head>
 <body>
-   <right><h1> Login Page</size></h1></right>
-   <p>Username:<input type="text"></p>
-   <p>Password:<input type="password"></p>
-   <button type = "Submit">Login</button>
+   <div class="LoginDiv">
+    <table width="100%" align="center">
+        <tr><th colspan="2">Login Page</th></tr>
+        <tr><td>User Name</td><td><input type="text"></td></tr>
+        <tr><td>Password</td><td><input type="password"></td></tr>
+        <tr><td colspan="2" align="center"><input type="submit" class="LoginButton"></td></tr>
+    </table>
+   </div>
    
 </body>
 </html>
