@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factorial</title>
     <script>
-    function factorial(){
+    function prime(){
         let a = parseInt(document.getElementById("n1").value);
-        let result = 1
-        if(a==0||a==1)
-        result=1;
-        else
-            for(let i=2;i<=a;i++)
-        result=result*i;
+        if(a<=1)
+            result = "Not positive number";
+        for(let i =2;i<a;i++)
+            if(a%i==0)
+            document.getElementById("n1").innerHTML = "Prime number:"; 
+            else
+                document.getElementById("n1").innerHTML = "not Prime number:"; 
        
-       document.getElementById("ResultDiv").innerHTML = "<b>Factorial:" + result; 
 
    }
 
@@ -24,9 +24,8 @@
     Enter Number <input type="text" id="n1"/>
     <br>
 
-    <button onclick="factorial()">Factorial</button>
+    <button onclick="prime()">Check</button>
     <br><br>
-    <div id = "ResultDiv">
 
     </div>
 </body>
