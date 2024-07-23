@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <script>
+    function factorial(){
+        let a = parseInt(document.getElementById("n1").value);
+        let result = 1
+        if(a==0||a==1)
+        result=1;
+        else
+            for(let i=2;i<=a;i++)
+        result=result*i;
+       
+       document.getElementById("ResultDiv").innerHTML = "<font color='green'><b>" + result + "</b></font color='green'>";
+
+   }
+
+</script>
+</head>
+<body>
+    Enter Number <input type="text" id="n1"/>
+    <br>
+
+    <button onclick="factorial()">Factorial</button>
+    <br><br>
+    <div id = "ResultDiv">
+
+    </div>
+</body>
+</html>

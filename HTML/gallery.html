@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid brown;
+        }
+        img:hover{
+            transform: scale(1.4);
+        }
+        section{
+            text-align: center;
+            border-top: 4px solid black;
+            border-left: 4px solid black;
+            border-right: 4px solid black;
+            border-bottom: 4px solid black;
+            background-color: pink;
+            
+            padding: 30px;
+            width: 80%;
+            height:fit-content;
+            margin: 40px auto;
+        }
+        h1{
+            text-align: center;
+            color: black;
+
+        }
+        #Div1{
+        border : 3px solid crimson;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:40px;
+        padding: 20px;
+        width: 90%;
+        
+        }
+    </style>
+</head>
+<body><center>
+    <div id="Div1">
+    <h1>Photo Gallery</h1></div>
+    <section class="gallery">
+        
+        <img src="photo1.jpg" alt="Image 1">
+        <img src="photo2.jpg" alt="Image 2">
+        <img src="photo3.jpg" alt="Image 3">
+        <img src="photo4.jpg" alt="Image 4">
+        <img src="photo5.jpg" alt="Image 5">
+        <img src="photo6.jpg" alt="Image 6">
+        <img src="photo7.jpg" alt="Image 5">
+        <img src="photo8.jpg" alt="Image 6">
+    </section></center>
+</body>
+</html>
