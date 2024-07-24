@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panlindrome</title>
+    <script>
+    function panlindrome(){
+        var string = document.getElementById("n1").value;
+        var rev = "";
+        for(var i = string.length -1; i>=0;i--){
+            rev += string[i];
+        }
+        document.getElementById("ResultDiv").innerHTML="<b>Reversed String : " + rev;
+        } 
+        
+   
+
+</script>
+</head>
+<body>
+    Enter String <input type="text" id="n1"/>
+    <br>
+
+    <button onclick="panlindrome()">Check</button>
+    <br><br>
+    <div id = "ResultDiv">
+
+    </div>
+</body>
+</html>

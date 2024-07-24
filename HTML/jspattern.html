@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <script>
+        function pattern(){
+        let a = parseInt(document.getElementById("n").value);
+        pattern="";
+        for(let i=1;i<=a;i++){
+            for(let j=1;j<=i;j++){
+                pattern+= "*";
+            }
+            pattern +="<br>";
+            
+        }
+        document.getElementById("ResultDiv").innerHTML = (pattern) ;
+    }
+    </script>
+</head>
+<body>
+    Enter the rows <input type="number" id="n">
+    <br>
+    <br>
+    <button onclick="pattern()">CLICK HERE</button>
+    <br>
+    <br>
+    <div id="ResultDiv">
+
+    </div>
+</body>
+</html>

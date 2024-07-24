@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Length</title>
+    <script>
+        function myconcat(){
+            let a = document.getElementById("n1").value;
+            let b = document.getElementById("n2").value;
+            let c = a.concat(" ",b);
+            document.getElementById("ResultDiv").innerHTML = "<b>String Concatenation : " + c;
+        }
+    </script>
+</head>
+<body>
+    String concat <input type="text" id="n1">
+    <br><br>
+    String concat <input type="text" id="n2">
+    <br><br>
+    <button onclick="myconcat()">CONCATE</button>
+    <br>
+    <div id = "ResultDiv">
+
+    </div>
+</body>
+</html>

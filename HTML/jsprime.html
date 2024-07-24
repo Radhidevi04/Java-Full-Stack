@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorial</title>
+    <title>Prime</title>
     <script>
     function prime(){
         let a = parseInt(document.getElementById("n1").value);
-        if(a<=1)
-            result = "Not positive number";
-        for(let i =2;i<a;i++)
-            if(a%i==0)
-            document.getElementById("n1").innerHTML = "Prime number:"; 
-            else
-                document.getElementById("n1").innerHTML = "not Prime number:"; 
-       
-
-   }
+        let flag = 0
+        for(let i=2;i<a;i++){
+            if(a%i==0){
+            flag =1;
+            }
+        }
+            if (flag==0){
+                    document.getElementById("ResultDiv").innerHTML="<b>Prime muber : "+ a; 
+                }
+            
+            
+            else{
+                document.getElementById("ResultDiv").innerHTML="<b>Not Prime number : "+a; 
+            }
+        }
+   
 
 </script>
 </head>
@@ -26,6 +32,7 @@
 
     <button onclick="prime()">Check</button>
     <br><br>
+    <div id = "ResultDiv">
 
     </div>
 </body>
