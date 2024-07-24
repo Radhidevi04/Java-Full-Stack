@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Arrow Function </title>
+</head>
+<body>
+    <script>
+        const sum = () => 10 + 20;
+        document.write("<br>Addition : " + sum());
+
+        const sub = (a, b) => a - b;
+        document.write("<br>Subtraction : " + sub(500, 200));
+
+        const mul = (a, b) => {return a * b};
+        document.write("<br>Multiplication : " + mul(20,100));
+
+        const div = (a,b) => a/b;
+        document.write("<br>Division : " + div(500,2));
+
+        const big = (x, y) => {
+            if(x>y)
+               return x;
+            else
+               return y;
+        };
+        document.write("<br>Big : " + big(50,75));
+
+        const factorial = (a) =>{
+            var result = 1
+        if(a==0||a==1)
+        result=1;
+        else
+            for(let i=2;i<=a;i++)
+              result=result*i;
+
+              return result;
+        };
+        document.write("<br>Factorial : " + factorial(5));
+    </script>
+</body>
+</html>

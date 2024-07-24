@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(name, age, dept){
+                this.name = name;
+                this.age = age;
+                this.dept = dept;
+            }
+            display(){
+                document.write("<br><br>Student Name : " + this.name);
+                document.write("<br>Student Age : " + this.age);
+                document.write("<br>Student Dept : " + this.dept);
+            }
+        }
+
+        var student1 = new Student("Rd",21,"AIDS");
+        student1.display();
+
+        var student2 = new Student("P",20,"CSE");
+        student2.display();
+
+        var student3 = new Student("D",21,"IT");
+        student3.display();
+    </script>
+</body>
+</html>
