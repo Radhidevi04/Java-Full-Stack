@@ -3,25 +3,32 @@
 
 <head> 
 	<title>Calculator</title> 
-
-	<!-- For styling -->
 	<style> 
 		table { 
             background-color: gray;
-			border: 1px solid black; 
+			border: 2px solid black; 
 			margin-left: auto; 
 			margin-right: auto; 
 		} 
 		
 		input[type="button"] { 
-			width: 100%; 
-			padding: 20px ; 
-			background-color: rgb(6, 131, 93); 
+			width: 90%; 
+			padding: 30px ; 
+			background-color: green; 
 			color: white; 
-			font-size: 24px; 
+			font-size: 32px; 
 			font-weight: bold; 
-			border: none; 
-			border-radius: 5px; 
+			border: 1px solid black; 
+			border-radius: 80px; 
+		} 
+		input[type="button"] { 
+			width: 100%; 
+			padding: 30px ; 
+			background-color: green; 
+			color: white; 
+			font-size: 32px; 
+			font-weight: bold; 
+			border: 1px solid black; 
 		} 
 		
 		input[type="text"] { 
@@ -37,46 +44,58 @@
 
 <body> 
 
-	<!-- Create table -->
-	<table id="calcu"> 
+	<table id="calculate"> 
 		<tr> 
-			<td colspan="6"> 
+			<td colspan="7"> 
 				<input type="text" id="result"> 
 			</td> 
 		</tr> 
 
 		<tr> 
-			<td><input type="button" value="C"></td> 
-			<td><input type="button" value="%"></td> 
-			<td><input type="button" value="<="></td> 
-			<td><input type="button" value="/"></td> 
+			<td><input type="button" value="C" onclick="Clear()"></td> 
+			<td><input type="button" value="%" onclick="Keyvalue('%')"></td> 
+			<td><input type="button" value="<=" onclick="Delete()"></td> 
+			<td><input type="button" value="/" onclick="Keyvalue('/')"></td> 
 		</tr> 
 		<tr> 
-			<td><input type="button" value="7"></td> 
-			<td><input type="button" value="8"></td> 
-			<td><input type="button" value="9"></td> 
-			<td><input type="button" value="*"></td> 
+			<td><input type="button" value="7" onclick="Keyvalue('7')"></td> 
+			<td><input type="button" value="8" onclick="Keyvalue('8')"></td> 
+			<td><input type="button" value="9" onclick="Keyvalue('9')"></td> 
+			<td><input type="button" value="*" onclick="Keyvalue('*')"></td> 
 		</tr> 
         <tr> 
-			<td><input type="button" value="4"></td> 
-			<td><input type="button" value="5"></td> 
-			<td><input type="button" value="6"></td> 
-			<td><input type="button" value="-"></td> 
+			<td><input type="button" value="4" onclick="Keyvalue('4')"></td> 
+			<td><input type="button" value="5" onclick="Keyvalue('5')"></td> 
+			<td><input type="button" value="6" onclick="Keyvalue('6')"></td> 
+			<td><input type="button" value="-" onclick="Keyvalue('-')"></td> 
 		</tr> 
         <tr> 
-			<td><input type="button" value="1"></td> 
-			<td><input type="button" value="2"></td> 
-			<td><input type="button" value="3"></td> 
-			<td><input type="button" value="+"></td> 
+			<td><input type="button" value="1" onclick="Keyvalue('1')"></td> 
+			<td><input type="button" value="2" onclick="Keyvalue('2')"></td> 
+			<td><input type="button" value="3" onclick="Keyvalue('3')"></td> 
+			<td><input type="button" value="+" onclick="Keyvalue('+')"></td> 
 		</tr> 
         <tr> 
-			<td><input type="button" value="00"></td> 
-			<td><input type="button" value="0"></td> 
-			<td><input type="button" value="."></td> 
-			<td><input type="button" value="="></td> 
+			<td><input type="button" value="00" onclick="Keyvalue('00')"></td> 
+			<td><input type="button" value="0" onclick="Keyvalue('0')"></td> 
+			<td><input type="button" value="." onclick="Keyvalue('.')"></td> 
+			<td><input type="button" value="=" onclick="Solve()"></td> 
 		</tr> 
-      
 	</table> 
+	<script>
+		function Clear(){
+			document.getElementById("result").value;
+		}
+		function Keyvalue(){
+			document.getElementById("result").value;
+		}
+		function Delete(){
+			document.getElementById
+		}
+		function Solve(){
+
+		}
+	</script>
 </body> 
 
 </html> 
