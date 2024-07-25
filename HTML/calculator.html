@@ -13,33 +13,42 @@
 		
 		input[type="button"] { 
 			width: 90%; 
-			padding: 30px ; 
+			padding: 30px 30px ; 
 			background-color: green; 
 			color: white; 
 			font-size: 32px; 
 			font-weight: bold; 
 			border: 1px solid black; 
-			border-radius: 80px; 
-		} 
-		input[type="button"] { 
-			width: 100%; 
-			padding: 30px ; 
-			background-color: green; 
-			color: white; 
-			font-size: 32px; 
-			font-weight: bold; 
-			border: 1px solid black; 
+			border-radius: 90%; 
 		} 
 		
 		input[type="text"] { 
-			padding: 20px 30px; 
-			font-size: 24px; 
+			padding: 20px 20px; 
+			font-size: 28px; 
 			font-weight: bold; 
 			border: none; 
-			border-radius: 5px; 
+			border-radius: 5%; 
 			border: 2px solid black; 
 		} 
 	</style> 
+	<script>
+		function Clear(){
+			document.getElementById("result").value = '';
+		}
+		function Keyvalue(value){
+			document.getElementById("result").value += value;
+		}
+		function Delete(){
+			let currentValue = document.getElementById("result").value;
+			document.getElementById("result").value = currentValue.slice(0,-1);
+		}
+		function Solve(){
+			let resultField = document.getElementById("result");
+			let result = eval(resultField.value);
+			resultField.value = result;
+
+		}
+	</script>
 </head> 
 
 <body> 
@@ -47,7 +56,7 @@
 	<table id="calculate"> 
 		<tr> 
 			<td colspan="7"> 
-				<input type="text" id="result"> 
+				<input type="text" id="result" > 
 			</td> 
 		</tr> 
 
@@ -82,20 +91,7 @@
 			<td><input type="button" value="=" onclick="Solve()"></td> 
 		</tr> 
 	</table> 
-	<script>
-		function Clear(){
-			document.getElementById("result").value;
-		}
-		function Keyvalue(){
-			document.getElementById("result").value;
-		}
-		function Delete(){
-			document.getElementById
-		}
-		function Solve(){
-
-		}
-	</script>
+	
 </body> 
 
 </html> 
