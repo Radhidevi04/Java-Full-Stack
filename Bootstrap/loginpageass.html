@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page using Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container{
+        padding:0 ;
+        width: 500px;
+        height: 400px;
+        border: 2px solid black;
+    }
+    .card-header{
+        align-content: left;
+        width: 496px;
+        height: 35px;
+        background-color: skyblue;
+    }
+    
+    .input-group{
+        width: 450px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <form>
+            <div class="card">
+                <p class="card-header">&emsp;Sign in&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<sub>Forget Password?</sub>
+            </p>
+            </div>
+            <br>
+            <div class="input-group">
+                &emsp;<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="email" class="form-control" name="email" placeholder="username or email">
+            </div>
+            <br>
+            <br>
+            <div class="input-group">
+                &emsp;<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="password">
+            </div>
+            <br>
+            &emsp;<button type="button" class="btn btn-success">Login</button>
+            &emsp;<button type="button" class="btn btn-primary">Login with Facebook</button>
+            <br><br>
+            <div class="input-group">
+            
+                <input class="form-check-input" type="checkbox"> Remember me
+            </div>
+            <hr style="height: 1px; border-width: 0px;background-color: black;">
+            <p>Don't have an account? <font color = "skyblue">Sign Up Here</font></p>
+        </form>
+    </div>
+</body>
+</html>
