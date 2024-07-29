@@ -1,0 +1,44 @@
+<h1>Welcome</h1>
+<br>
+<h1><b> Interpolation</b></h1>
+<br>
+My name : {{ name }}
+<br>
+My Age : {{ age}}
+<br>
+My Email : {{email}}
+<br>
+Addition : {{getAddition(80,40)}}
+
+<br>
+
+<h1> Property Binding Example</h1>
+<font [color]="txtColor">
+My name : <input type="text" [value]="name" />
+<br>
+My Age : <input type="text" [value]="age" />
+<br>
+My Email : <input type="text" [value] = "email" />
+<br>
+Addition : <input type="text" [value]="getAddition(80,40)"/>
+<br>
+<img [src] = "imgPath" width="200px" height="150px"/>
+
+</font>
+
+<br>
+<h1><b>EventBinding</b></h1>
+<br>
+<br>
+<button (click) = "changeName()">Change Name</button>
+<br>
+<br>
+<button (click) = "changeAge()">Change Age</button>
+<br>
+<br>
+<button (click) = "changeemail()"> Change Email</button>
+<br>
+<br>
+<!--
+<app-child></app-child>
+-->
