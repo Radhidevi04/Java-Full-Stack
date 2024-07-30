@@ -5,7 +5,17 @@
   "projects": {
     "Microproject": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -99,6 +109,6 @@
     }
   },
   "cli": {
-    "analytics": "d2a1d80f-7a47-4916-9dfd-5a2301dbc95a"
+    "analytics": "c834d006-003d-439b-9ba6-34ce1e4ac7b0"
   }
 }
