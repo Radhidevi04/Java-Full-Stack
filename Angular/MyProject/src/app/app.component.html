@@ -1,3 +1,5 @@
+<!--
+
 <h1>Welcome</h1>
 <br>
 <h1><b> Interpolation</b></h1>
@@ -39,6 +41,75 @@ Addition : <input type="text" [value]="getAddition(80,40)"/>
 <button (click) = "changeemail()"> Change Email</button>
 <br>
 <br>
-<!--
-<app-child></app-child>
--->
+<h1>Two way data Binding</h1>
+Enter FirstName <input type="text" [(ngModel)]="fname" />
+<br>
+<b>Welcome {{fname}}</b>
+
+
+
+for app.component.html
+
+
+{
+  name : string;
+  age : number;
+  email : string;
+  txtColor : string;
+  imgPath: string
+  
+  fname : string = "";
+
+
+  constructor(){
+    this.name = "Radhidevi";
+    this.age = 21;
+    this.email = "radhidevi.kalaiselvan@gmail.com";
+    this.txtColor = "red";
+    this.imgPath = "/assests/logo2.jpg";
+    
+  }
+
+  getAddition(a : number,b:number){
+    let sum = a+ b;
+    return sum;
+  }
+  
+  changeName(){
+    this.name="Kalaiselvan"
+  }
+  
+  changeAge(){
+    this.age=54
+  }
+  changeemail(){
+    this.email = "pugalss@gmail.com"
+  }
+}
+  -->
+
+
+
+<h1>Angular Structural Directives</h1>
+<button (click)="changeFlag()">Show or Hide Div</button>
+<br>
+<div *ngIf="flag" [ngStyle] = "myStyle">
+   <ul>
+    <li *ngFor = "let vec of vehicles" (click)="setselectedItem(vec)">{{vec}}</li>
+   </ul>
+   <br>
+   <b [ngClass] = "myClass">selected item:{{selectedVehicle}}</b>
+   <br>
+   <div [ngSwitch]="selectedVehicle">
+    <font color="red" *ngSwitchCase="'Bike'">Honda<br>Yamaha</font>
+    <font color="crimson" *ngSwitchCase="'Auto'">Shareauto<br>Normalauto</font>
+    <font color="green" *ngSwitchCase="'Car'">Mahindra<br>Swift</font>
+
+   </div>
+</div>
+<br>
+<button (click)="changeFlag()">Show or Hide</button>
+<br>
+<div *ngIf="flag">
+    <b>Radhidevi</b>
+</div>
