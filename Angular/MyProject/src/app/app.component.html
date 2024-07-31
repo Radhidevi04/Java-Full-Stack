@@ -86,7 +86,7 @@ for app.component.html
     this.email = "pugalss@gmail.com"
   }
 }
-  -->
+
 
 
 
@@ -113,3 +113,49 @@ for app.component.html
 <div *ngIf="flag">
     <b>Radhidevi</b>
 </div>
+
+app.compoenet.html
+{
+  flag : boolean;
+  vehicles : string[];
+  selectedVehicle : string = "";
+  myStyle : {};
+  myClass : string;
+
+  constructor(){
+    this.flag=true;
+    this.vehicles = ["Bike","Car", "Auto"];
+    this.myStyle = {'width' : '40%' , 'border' : '2px solid green'}
+    this.myClass = "MyClass1";
+  }
+  changeFlag(){
+    this.flag = ! this.flag;
+  }
+
+  setselectedItem(vec : string){
+    this.selectedVehicle = vec;
+  }
+}
+  
+
+  <table width="80%" align="center">
+    <tr>
+      <th><a routerLink="/home">Home</a></th>
+      <th><a routerLink="/contact">Contact</a></th>
+      <th><a routerLink="/about">About</a></th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <div>
+    This place is create a new component
+    <router-outlet></router-outlet>
+  </div>
+-->
+
+<h1>
+  Addition: {{sum}}
+  Subtraction : {{sub}}
+  <br>
+  <app-child></app-child>
+</h1>

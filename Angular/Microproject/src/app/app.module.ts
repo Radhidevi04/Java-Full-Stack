@@ -4,11 +4,15 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SeatingDataComponent } from './seating-data/seating-data.component';
+import { SystemNoComponent } from './system-no/system-no.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SeatingDataComponent
+    SeatingDataComponent,
+    SystemNoComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +23,6 @@ import { SeatingDataComponent } from './seating-data/seating-data.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }
