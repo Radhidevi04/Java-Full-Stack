@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './system-no.component.css'
 })
 export class SystemNoComponent {
+     
 
 }
