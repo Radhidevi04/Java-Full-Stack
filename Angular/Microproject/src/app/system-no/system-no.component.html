@@ -4,59 +4,70 @@
         <div class="col-md-12">
             <form #myForm = "ngForm">
                 <div class="form-group">
-                    <label for="Student reg.no">Student Reg.no</label>
+                    <label for="System no"><b>System no : </b></label>
+                    <input class="form-control" name="sysno" #sysno="ngModel" ngModel required pattern="[0-9]+"/>
+                    <div *ngIf="sysno.touched">
+                        <div *ngIf="sysno.errors?.['required']">
+                            <b style="color:red;"> * System no required</b>
+                        </div>
+                        <div *ngIf="sysno.errors?.['pattern']">
+                            <b style="color: red;">System no Invalid</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Student reg.no"><b>Student regno : </b></label>
                     <input class="form-control" name="stuId" #stuId="ngModel" ngModel required pattern="[0-9]+"/>
                     <div *ngIf="stuId.touched">
                         <div *ngIf="stuId.errors?.['required']">
-                            <b style="color:green;">Student Reg no required</b>
+                            <b style="color:red;"> * Student regno required</b>
                         </div>
                         <div *ngIf="stuId.errors?.['pattern']">
-                            <b style="color: green;">Student Reg no Invalid</b>
+                            <b style="color: red;">Student regno Invalid</b>
                         </div>
                     </div>
                 </div>
                 <br>
-                <br>
                 <div class="form-group">
-                    <label for="Student name">Student name</label>
+                    <label for="Student name"><b>Student name : </b></label>
                     <input class="form-control" name="stuname" #stuname="ngModel" ngModel required pattern="[a-zA-Z][a-zA-z]+"/>
                     <div *ngIf="stuname.touched">
                         <div *ngIf="stuname.errors?.['required']">
-                            <b style="color:green;">Student name required</b>
+                            <b style="color:red;"> * Student name required</b>
                         </div>
                         <div *ngIf="stuname.errors?.['pattern']">
-                            <b style="color: green;">Student name Invalid</b>
+                            <b style="color: red;">Student name Invalid</b>
                         </div>
                     </div>
                 </div>
                 <br>
-                <br>
                 <div class="form-group">
-                    <label for="Student rollno">Student rollno</label>
+                    <label for="Student rollno"><b>Student rollno : </b></label>
                     <input class="form-control" name="sturolno" #sturolno="ngModel" ngModel required pattern="[0-9]+"/>
                     <div *ngIf="sturolno.touched">
                         <div *ngIf="sturolno.errors?.['required']">
-                            <b style="color:green;">Student rollno required</b>
+                            <b style="color:red;"> * Student rollno required</b>
                         </div>
                         <div *ngIf="sturolno.errors?.['pattern']">
-                            <b style="color: green;">Student rollno Invalid</b>
+                            <b style="color: red;">Student rollno Invalid</b>
                         </div>
                     </div>
                 </div>
                 <br>
-                <br>
                 <div class="form-group">
-                    <label for="Student dept">Student dept</label>
+                    <label for="Student dept"><b>Student dept : </b></label>
                     <input class="form-control" name="studept" #studept="ngModel" ngModel required pattern="[a-zA-Z][a-zA-Z]+"/>
                     <div *ngIf="studept.touched">
                         <div *ngIf="studept.errors?.['required']">
-                            <b style="color:green;">Student dept required</b>
+                            <b style="color:red;"> * Student dept required</b>
                         </div>
                         <div *ngIf="studept.errors?.['pattern']">
-                            <b style="color: green;">Student dept Invalid</b>
+                            <b style="color: red;">Student dept Invalid</b>
                         </div>
                     </div>
                 </div>
+                <br>
                 <button class="btn btn-success">Insert</button>&nbsp;&nbsp;
                 <button class="btn btn-primary">Update</button>&nbsp;&nbsp;
                 <button class="btn btn-danger">Delete</button>&nbsp;&nbsp;
