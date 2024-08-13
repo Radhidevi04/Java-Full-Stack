@@ -6,11 +6,6 @@
       "empSalary": 2000
     },
     {
-      "id": "101",
-      "empName": "Radhi",
-      "empSalary": "300"
-    },
-    {
       "id": "103",
       "empName": "Dharshan",
       "empSalary": "3000"
@@ -23,6 +18,11 @@
     {
       "id": "105",
       "empName": "devi",
+      "empSalary": "400"
+    },
+    {
+      "id": "106",
+      "empName": "Archana",
       "empSalary": "400"
     }
   ]

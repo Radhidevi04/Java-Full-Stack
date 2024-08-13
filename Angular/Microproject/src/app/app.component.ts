@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { lab } from './Model/lab';
+import { LabService } from './lab.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Microproject';
+  
+  
 }
